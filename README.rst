@@ -1,5 +1,5 @@
-Bloxplorer
-==========
+Bloxplorer - Bitcoin and Liquid Blockchain Explorer
+===================================================
 
 |circle| |version| |license| |downloads|
 
