@@ -7,11 +7,11 @@
     <title>1. Quickstart &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="2. API Documentation" href="api.html" />
@@ -33,45 +33,45 @@
           <div class="body" role="main">
             
   <div class="section" id="quickstart">
-<span id="id1"></span><h1>1. Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><span class="section-number">1. </span>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
 <p>Using the Bloxplorer package is easy and straightforward, as it should be.</p>
 <div class="section" id="setup">
-<h2>1.1. Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.1. </span>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
 <p>To install the Bloxplorer package just run this command in your favorite terminal:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">bloxplorer</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pip</span> <span class="n">install</span> <span class="n">bloxplorer</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="usage">
-<h2>1.2. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.2. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>After installation you may import and use the desired explorer and all
 of its associated methods. The available explorers are Bitcoin, Liquid and Bitcoin Testnet:</p>
 <div class="section" id="bitcoin-explorer">
-<h3>1.2.1. Bitcoin Explorer<a class="headerlink" href="#bitcoin-explorer" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.2.1. </span>Bitcoin Explorer<a class="headerlink" href="#bitcoin-explorer" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bloxplorer</span> <span class="kn">import</span> <span class="n">bitcoin_explorer</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">bitcoin_explorer</span><span class="o">.</span><span class="n">blocks</span><span class="o">.</span><span class="n">get_last_height</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 <span class="s1">&#39;587840&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="liquid-explorer">
-<h3>1.2.2. Liquid Explorer<a class="headerlink" href="#liquid-explorer" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.2.2. </span>Liquid Explorer<a class="headerlink" href="#liquid-explorer" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bloxplorer</span> <span class="kn">import</span> <span class="n">liquid_explorer</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">liquid_explorer</span><span class="o">.</span><span class="n">blocks</span><span class="o">.</span><span class="n">get_last_height</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 <span class="s1">&#39;412287&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="bitcoin-testnet-explorer">
-<h3>1.2.3. Bitcoin Testnet Explorer<a class="headerlink" href="#bitcoin-testnet-explorer" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">1.2.3. </span>Bitcoin Testnet Explorer<a class="headerlink" href="#bitcoin-testnet-explorer" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bloxplorer</span> <span class="kn">import</span> <span class="n">bitcoin_testnet_explorer</span>
 
 <span class="n">result</span> <span class="o">=</span> <span class="n">bitcoin_testnet_explorer</span><span class="o">.</span><span class="n">blocks</span><span class="o">.</span><span class="n">get_last_height</span><span class="p">()</span>
-<span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 <span class="s1">&#39;1571699&#39;</span>
 </pre></div>
 </div>
@@ -79,16 +79,16 @@ of its associated methods. The available explorers are Bitcoin, Liquid and Bitco
 </div>
 </div>
 <div class="section" id="timeouts">
-<h2>1.3. Timeouts<a class="headerlink" href="#timeouts" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.3. </span>Timeouts<a class="headerlink" href="#timeouts" title="Permalink to this headline">¶</a></h2>
 <p>You can tell Bloxplorer to stop waiting for a response from the Blockstream API after
 a given number of seconds with the <strong>timeout</strong> parameter.
 By default the timeout is set to 5 seconds.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bitcoin_explorer</span><span class="o">.</span><span class="n">blocks</span><span class="o">.</span><span class="n">get_blocks</span><span class="p">(</span><span class="n">start_height</span><span class="o">=</span><span class="s1">&#39;587840&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bitcoin_explorer</span><span class="o">.</span><span class="n">blocks</span><span class="o">.</span><span class="n">get_blocks</span><span class="p">(</span><span class="n">start_height</span><span class="o">=</span><span class="s1">&#39;587840&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="exceptions">
-<h2>1.4. Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.4. </span>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h2>
 <p>There are 2 different types of exceptions that can be raised, client and API exceptions.</p>
 <p><strong>Client Exceptions</strong></p>
 <p>In the event of a network problem (e.g. DNS failure, refused connection, etc),
@@ -102,15 +102,15 @@ raise BlockstreamApiError.</p>
 <p>This exception will provide the same data as the Client exceptions, alongside the status code.</p>
 </div>
 <div class="section" id="source-code">
-<h2>1.5. Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.5. </span>Source Code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
 <p>Bloxplorer is available on GitHub -&gt; <a class="reference external" href="https://github.com/valinsky/bloxplorer">right here</a>.</p>
 <p>Clone the public repository:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">valinsky</span><span class="o">/</span><span class="n">bloxplorer</span><span class="o">.</span><span class="n">git</span>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">valinsky</span><span class="o">/</span><span class="n">bloxplorer</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="dependencies">
-<h2>1.6. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.6. </span>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
 <p>Bloxplorer uses the beautiful <a class="reference external" href="https://github.com/requests/requests">Requests</a> package for
 its HTTP calls. Big shout out to the <a class="reference external" href="https://github.com/requests/requests">Requests</a> team.</p>
 </div>
@@ -151,7 +151,7 @@ its HTTP calls. Big shout out to the <a class="reference external" href="https:/
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">🔥🔥🔥 Bloxplorer 🔥🔥🔥</a></li>
-      <li>Next: <a href="api.html" title="next chapter">2. API Documentation</a></li>
+      <li>Next: <a href="api.html" title="next chapter"><span class="section-number">2. </span>API Documentation</a></li>
   </ul></li>
 </ul>
 </div>
@@ -164,7 +164,7 @@ its HTTP calls. Big shout out to the <a class="reference external" href="https:/
     </form>
     </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
 
 
 
@@ -181,7 +181,7 @@ its HTTP calls. Big shout out to the <a class="reference external" href="https:/
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
