@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2.6. Issued Assets &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -98,15 +99,15 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="bloxplorer.issued_assets.IssuedAssets">
-<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.issued_assets.</code><code class="sig-name descname">IssuedAssets</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.issued_assets.</code><code class="sig-name descname">IssuedAssets</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wrapper class around the Esplora Issued Assets endpoint.
 Only for Elements / Liquid.</p>
-<p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#issued-assets-elementsliquid-only">Blockstream Esplora Issued Assets API Docs</a></p>
-<dl class="method">
+<p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#assets-elementsliquid-only">Blockstream Esplora Issued Assets API Docs</a></p>
+<dl class="py method">
 <dt id="bloxplorer.issued_assets.IssuedAssets.get">
-<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">asset_id</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">asset_id</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information about an issued asset.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -126,9 +127,9 @@ Only for Elements / Liquid.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.issued_assets.IssuedAssets.get_chain">
-<code class="sig-name descname">get_chain</code><span class="sig-paren">(</span><em class="sig-param">asset_id</em>, <em class="sig-param">last_seen=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_chain" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_chain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">asset_id</span></em>, <em class="sig-param"><span class="n">last_seen</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_chain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the list of (re)issuance and burn transactions associated with this asset id.
 Does not include regular transactions transferring this asset.</p>
 <dl class="field-list simple">
@@ -150,9 +151,9 @@ Does not include regular transactions transferring this asset.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.issued_assets.IssuedAssets.get_mempool">
-<code class="sig-name descname">get_mempool</code><span class="sig-paren">(</span><em class="sig-param">asset_id</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_mempool" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_mempool</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">asset_id</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_mempool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the list of (re)issuance and burn transactions associated with this asset id.
 Does not include regular transactions transferring this asset.</p>
 <dl class="field-list simple">
@@ -173,9 +174,34 @@ Does not include regular transactions transferring this asset.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
+<dt id="bloxplorer.issued_assets.IssuedAssets.get_supply">
+<code class="sig-name descname">get_supply</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">asset_id</span></em>, <em class="sig-param"><span class="n">decimal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_supply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the current total supply of the specified asset.
+Not available for assets with blinded issuances.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>asset_id</strong> – String representing the issued asset hash.</p></li>
+<li><p><strong>decimal</strong> – Boolean that returns the supply as decimal if set.
+Return in base units if not set (default).</p></li>
+<li><p><strong>**kwargs</strong> – (Optional) Arguments that <cite>Requests</cite> takes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="field-list simple">
+<dt class="field-odd">class</dt>
+<dd class="field-odd"><p><cite>Response</cite> object.</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="bloxplorer.issued_assets.IssuedAssets.get_txs">
-<code class="sig-name descname">get_txs</code><span class="sig-paren">(</span><em class="sig-param">asset_id</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_txs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_txs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">asset_id</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.issued_assets.IssuedAssets.get_txs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the list of (re)issuance and burn transactions associated with this asset id.
 Does not include regular transactions transferring this asset.</p>
 <dl class="field-list simple">
@@ -267,7 +293,7 @@ Does not include regular transactions transferring this asset.</p>
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

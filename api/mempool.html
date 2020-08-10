@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2.4. Mempool &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -57,14 +58,14 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="bloxplorer.mempool.Mempool">
-<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.mempool.</code><code class="sig-name descname">Mempool</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.mempool.</code><code class="sig-name descname">Mempool</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wrapper class around the Esplora Mempool endpoint.</p>
 <p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#mempool">Blockstream Esplora Mempool API Docs</a></p>
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.mempool.Mempool.get">
-<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get mempool backlog statistics.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -81,9 +82,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.mempool.Mempool.get_latest_txs">
-<code class="sig-name descname">get_latest_txs</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get_latest_txs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_latest_txs</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get_latest_txs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of the last 10 transactions to enter the mempool.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -100,9 +101,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.mempool.Mempool.get_txids">
-<code class="sig-name descname">get_txids</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get_txids" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_txids</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.mempool.Mempool.get_txids" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the full list of txids in the mempool as an array.
 The order of the txids is arbitrary and does not match bitcoind’s.</p>
 <dl class="field-list simple">
@@ -192,7 +193,7 @@ The order of the txids is arbitrary and does not match bitcoind’s.</p>
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

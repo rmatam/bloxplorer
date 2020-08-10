@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2.2. Blocks &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -59,14 +60,14 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="bloxplorer.blocks.Blocks">
-<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.blocks.</code><code class="sig-name descname">Blocks</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.blocks.</code><code class="sig-name descname">Blocks</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wrapper class around the Esplora Blocks endpoint.</p>
 <p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#blocks">Blockstream Esplora Blocks API Docs</a></p>
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get">
-<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns information about a block.
 The response from this endpoint can be cached indefinitely.</p>
 <dl class="field-list simple">
@@ -87,9 +88,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_blocks">
-<code class="sig-name descname">get_blocks</code><span class="sig-paren">(</span><em class="sig-param">start_height=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_blocks" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_blocks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start_height</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_blocks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the 10 newest blocks starting at the tip or at <cite>start_height</cite> if specified.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -109,9 +110,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_height">
-<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><em class="sig-param">height</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_height" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_height</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">height</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_height" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the hash of the block currently at <cite>height</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -131,9 +132,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_last_hash">
-<code class="sig-name descname">get_last_hash</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_last_hash" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_last_hash</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_last_hash" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the hash of the last block.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -150,9 +151,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_last_height">
-<code class="sig-name descname">get_last_height</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_last_height" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_last_height</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_last_height" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the height of the last block.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -169,9 +170,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_status">
-<code class="sig-name descname">get_status</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_status" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_status" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns information about the block status.
 The response from this endpoint can be cached indefinitely.</p>
 <dl class="field-list simple">
@@ -192,9 +193,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_txids">
-<code class="sig-name descname">get_txids</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">index=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_txids" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_txids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="n">index</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_txids" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of all txids in the block.
 If <cite>index</cite> is present, return the transaction at index <cite>index</cite> within the specified block.
 The response from this endpoint can be cached indefinitely.</p>
@@ -217,9 +218,9 @@ The response from this endpoint can be cached indefinitely.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.blocks.Blocks.get_txs">
-<code class="sig-name descname">get_txs</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">start_index=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_txs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_txs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="n">start_index</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.blocks.Blocks.get_txs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of transactions in the block (up to 25 transactions beginning at start_index).
 Transactions returned here do not have the status field, since all the transactions share the
 same block and confirmation status.
@@ -315,7 +316,7 @@ The response from this endpoint can be cached indefinitely.</p>
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

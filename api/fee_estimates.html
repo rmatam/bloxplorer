@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2.5. Fee Estimates &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -57,14 +58,14 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="bloxplorer.fees.Fees">
-<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.fees.</code><code class="sig-name descname">Fees</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.fees.Fees" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.fees.</code><code class="sig-name descname">Fees</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.fees.Fees" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wrapper class around the Esplora Fee Estimates endpoint.</p>
 <p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#fee-estimates">Blockstream Esplora Fee Estimates API Docs</a></p>
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.fees.Fees.get_estimates">
-<code class="sig-name descname">get_estimates</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.fees.Fees.get_estimates" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_estimates</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.fees.Fees.get_estimates" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an object where the key is the confirmation target (in number of blocks)
 and the value is the estimated feerate (in sat/vB).
 The available confirmation targets are 2, 3, 4, 6, 10, 20, 144, 504 and 1008 blocks.</p>
@@ -155,7 +156,7 @@ The available confirmation targets are 2, 3, 4, 6, 10, 20, 144, 504 and 1008 blo
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

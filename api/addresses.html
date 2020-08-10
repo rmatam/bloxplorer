@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2.1. Addresses &#8212; Bloxplorer  documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -65,14 +66,14 @@
 <span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
-<dl class="class">
+<dl class="py class">
 <dt id="bloxplorer.addresses.Addresses">
-<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.addresses.</code><code class="sig-name descname">Addresses</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">bloxplorer.addresses.</code><code class="sig-name descname">Addresses</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses" title="Permalink to this definition">¶</a></dt>
 <dd><p>Wrapper class around the Esplora Addresses endpoint.</p>
 <p><a class="reference external" href="https://github.com/Blockstream/esplora/blob/master/API.md#addresses">Blockstream Esplora Addresses API Docs</a></p>
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get">
-<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">address</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information about an address.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -92,9 +93,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_address_prefix">
-<code class="sig-name descname">get_address_prefix</code><span class="sig-paren">(</span><em class="sig-param">prefix</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_address_prefix" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_address_prefix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prefix</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_address_prefix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search for addresses beginning with :prefix.
 Returns an array with up to 10 results.</p>
 <dl class="field-list simple">
@@ -115,9 +116,9 @@ Returns an array with up to 10 results.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_address_type">
-<em class="property">static </em><code class="sig-name descname">get_address_type</code><span class="sig-paren">(</span><em class="sig-param">address</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_address_type" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">get_address_type</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_address_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the Bitcoin address type.
 Not available for Liquid.</p>
 <dl class="field-list simple">
@@ -130,9 +131,9 @@ Not available for Liquid.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_confirmed_scripthash_tx_history">
-<code class="sig-name descname">get_confirmed_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">last_seen_txid=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_confirmed_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_confirmed_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="n">last_seen_txid</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_confirmed_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get confirmed transaction history for the specified scripthash, sorted with newest first.
 Returns 25 transactions per request.
 More can be requested by specifying the <cite>last_seen_txid</cite> from
@@ -156,9 +157,9 @@ More can be requested by specifying the <cite>last_seen_txid</cite> from
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_confirmed_tx_history">
-<code class="sig-name descname">get_confirmed_tx_history</code><span class="sig-paren">(</span><em class="sig-param">address</em>, <em class="sig-param">last_seen_txid=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_confirmed_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_confirmed_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em>, <em class="sig-param"><span class="n">last_seen_txid</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_confirmed_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get confirmed transaction history for the specified address, sorted with newest first.
 Returns 25 transactions per request.
 More can be requested by specifying the <cite>last_seen_txid</cite> from <cite>get_tx_history</cite> response.</p>
@@ -181,9 +182,9 @@ More can be requested by specifying the <cite>last_seen_txid</cite> from <cite>g
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_scripthash">
-<code class="sig-name descname">get_scripthash</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_scripthash</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get information about a scripthash.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -203,9 +204,9 @@ More can be requested by specifying the <cite>last_seen_txid</cite> from <cite>g
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_scripthash_tx_history">
-<code class="sig-name descname">get_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get transaction history for the specified scripthash, sorted with newest first.
 Returns up to 50 mempool transactions plus the first 25 confirmed transactions.
 You can request more confirmed transactions using <cite>last_seen_txid</cite> inside
@@ -228,9 +229,9 @@ You can request more confirmed transactions using <cite>last_seen_txid</cite> in
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_scripthash_utxo">
-<code class="sig-name descname">get_scripthash_utxo</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash_utxo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_scripthash_utxo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_scripthash_utxo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the list of unspent transaction outputs associated with the scripthash.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -250,9 +251,9 @@ You can request more confirmed transactions using <cite>last_seen_txid</cite> in
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_tx_history">
-<code class="sig-name descname">get_tx_history</code><span class="sig-paren">(</span><em class="sig-param">address</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get transaction history for the specified address, sorted with newest first.
 Returns up to 50 unconfirmed transactions plus the first 25 confirmed transactions.
 You can request more confirmed transactions using <cite>last_seen_txid</cite> inside
@@ -275,9 +276,9 @@ You can request more confirmed transactions using <cite>last_seen_txid</cite> in
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_unconfirmed_scripthash_tx_history">
-<code class="sig-name descname">get_unconfirmed_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param">hash</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_unconfirmed_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_unconfirmed_scripthash_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hash</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_unconfirmed_scripthash_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get unconfirmed transaction history for the specified scripthash.
 Returns up to 50 transactions.</p>
 <dl class="field-list simple">
@@ -298,9 +299,9 @@ Returns up to 50 transactions.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_unconfirmed_tx_history">
-<code class="sig-name descname">get_unconfirmed_tx_history</code><span class="sig-paren">(</span><em class="sig-param">address</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_unconfirmed_tx_history" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_unconfirmed_tx_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_unconfirmed_tx_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get unconfirmed transaction history for the specified address.
 Returns up to 50 transactions.</p>
 <dl class="field-list simple">
@@ -321,9 +322,9 @@ Returns up to 50 transactions.</p>
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="bloxplorer.addresses.Addresses.get_utxo">
-<code class="sig-name descname">get_utxo</code><span class="sig-paren">(</span><em class="sig-param">address</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_utxo" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_utxo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">address</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#bloxplorer.addresses.Addresses.get_utxo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the list of unspent transaction outputs associated with the address.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -415,7 +416,7 @@ Returns up to 50 transactions.</p>
       &copy;2019, Dumitru Valeriu Voicu.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
